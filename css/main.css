@@ -142,7 +142,7 @@ article > img
 {
     display: inline-block;
     max-height: 7rem;
-    max-width: 10rem;
+    max-width: 20rem;
     background: rgba(255, 255, 255, .1);
 
 }
