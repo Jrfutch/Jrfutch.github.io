@@ -1,18 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body, nav, section, footer, article, h1, h2, h3, h4, h5, p, a, ul, li, dt, dd
 {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 100%;
+    font: 100%;
     text-decoration: none;
-    font-weight: normal;
+    font: normal;
     color: inherit;
     box-sizing: border-box;
     margin: auto;
+    font-family: "Roboto";
+    font-weight: bold;
 }
 
+nav, body, footer
+{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+body > section
+{
+    border-bottom: 1px;
+}
 
 
 html
@@ -51,6 +64,7 @@ p
     margin: 1rem 0 1rem 0;
 }
 
+
 img
 {
     display: block;
@@ -62,6 +76,56 @@ header
 {
     background-color: #FCFCFC;
     color: #151515;
+}
+
+header h1
+{
+    float: left;
+    margin-right: 100px;
+}
+
+header section ul
+{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+body > section::after
+{
+    border-bottom: 1px;
+}
+
+body > section
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#info img
+{
+    float: left;
+}
+#info::after
+{
+    border-bottom: 1px;
+
+}
+#info::after
+{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+#info p
+{
+    text-align: center;
+}
+#info button
+{
+    margin-left: 275px;
 }
 
 a
@@ -76,18 +140,37 @@ a
     color: #7ACBA7;
 }
 
+
+
 #contact
 {
-    background-color: #373D41;
+    background: #373D41;
     color: #9B9B9B;
     display: block;
+    float: left;
+    
 }
 
-#petServices > h1
+
+#contact li
 {
-    background-image: url("file:///Users/jessicabyrne/Desktop/WDD/futch_Jessica_1.5IntroToHTMLProject/Images/happycat.jpg");
+    display: inline-block;
+}
+
+#phoneNum
+{
+    margin-left: 1200px;
+}
+
+#petServices
+{
+    background-image: url("file:///Users/jessicabyrne/Desktop/WDD/futch_Jessica_1.5IntroToHTMLProject/Images/Hero.jpg");
+    background-size: 1795px;
+    width: 1440px;
+    height: 550px;
     background-repeat: no-repeat;
     color: white;
+    text-align: center;
 }
 
 #servicesSection
@@ -99,13 +182,43 @@ button
 {
     color: #FFFFFF;
     background-color: #7ACBA7;
+    padding: 1rem 1.5rem;
 }
 
-#careServices > h2
+#careServices
 {
     color: white;
-    background-image: url("file:///Users/jessicabyrne/Desktop/WDD/futch_Jessica_1.5IntroToHTMLProject/Images/catblackbackground.jpg");
+    background-image: url("file:///Users/jessicabyrne/Desktop/WDD/futch_Jessica_1.5IntroToHTMLProject/Images/cat.jpg");
+    background-size: 1795px;
+    width: 1440px;
+    height: 550px;
     background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#title
+{
+    text-align: center;
+
+}
+
+#title h2
+{
+    padding-top: 100px;
+}
+
+#title2
+{
+    text-align: center;
+
+}
+
+#cameraCat
+{
+    width: 750px;
+    height: 550px;
+
 }
 
 #careServices > p
@@ -122,6 +235,16 @@ button
 #ourServices
 {
     color: black;
+    background-color: #F2F3F8;
+    text-align: center;
+}
+
+#ourServices article
+{
+    float: left;
+    margin-left: 65px;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 #stats
@@ -129,6 +252,7 @@ button
     display: inline-block;
     background-color: #7ACBA7;
     color: #FFFFFF;
+    width: 1440px;
 }
 
 #stats li
@@ -141,11 +265,22 @@ button
 article > img
 {
     display: inline-block;
-    max-height: 7rem;
-    max-width: 20rem;
+    max-height: 1rem;
+    max-width: 1rem;
     background: rgba(255, 255, 255, .1);
 
 }
+
+#imgs1
+{
+    float: left;
+}
+
+#imgs2
+{
+    float: left;
+}
+
 
 footer
 {
@@ -153,7 +288,27 @@ footer
     background-color: #FFFFFF;
 }
 
+#footerInfo
+{
+    float: left;
+    text-align: center;
+}
+
+#feed
+{
+    float: left;
+
+}
+
 #social
 {
     color: #50525D;
+}
+#social li
+{
+    display: inline-block;
+}
+#news
+{
+    text-align: center;
 }
