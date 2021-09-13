@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Pet Hotel</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <section>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/logo.png" alt="Logo">
         <nav>
             <ul>
                 <li>
-                    <a href="#">Boarding</a>
+                    <a href="#"><img src="Images/logo.png" alt="Logo"></a>
+                </li>
+                <li>
+                    <a id="selected" href="#">Boarding</a>
                 </li>
                 <li>
                     <a href="#">News</a>
@@ -26,22 +28,29 @@
                     <a href="#">Blocks</a>
                 </li>
                 <li>
-                    <a href="#">(777) 555-5101</a>
+                    <a href="#"><img src="Images/account.png" alt="Account"></a>
                 </li>
-
+                <li>
+                    <a href="#"><img src="Images/cart.png" alt="Cart"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="Images/search.png" alt="Search"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="Images/phone.png" alt="Phone">(777) 555-5101</a>
+                </li>
             </ul>
         </nav>
 
-        </section>
     </header>
     <h1><a>Boarding</a></h1>
-    <section>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/puppy.jpg" alt="Puppy">
+    <section id="deluxe">
+        <img src="Images/puppy.jpg" alt="Puppy">
         <h2>Deluxe Boarding</h2>
         <p>Our private pet suites afford plenty of room for your pets to relax and<br> enjoy their time away from home. All suites are furnished to reflect the <br>home environment.</p>
         <ul>
             <li>
-                <a>Amenities: climate control, live cameras</a>
+                <a>Amenities:<strong> climate control, live cameras</strong></a>
             </li>
             <li>
                 <a>View: courtyard</a>
@@ -53,25 +62,25 @@
                 <a>Bed Type: bed with mattress and pillows</a>
             </li>
             <li>
-                <a>Categories: single pet suite</a>
+                <a>Categories: <strong> pet suite</strong></a>
             </li>
 
         </ul>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/cutepuppy.jpg" alt="Cute Puppy">
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/happypuppy.png" alt="Happy Puppy">
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/dogbed.jpg" alt="Dog Bed">
+        <img src="Images/cutepuppy.jpg" alt="Cute Puppy">
+        <img src="Images/happypuppy.png" alt="Happy Puppy">
+        <img src="Images/dogbed.jpg" alt="Dog Bed">
 
         <h3>Prices start at: <a>$60 per night</a></h3>
-        <button>book</button>
-        <button>view details</button>
+        <button id="bookButton">book</button>
+        <button id="detailButton">view details</button>
     </section>
-    <section>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/dog-bed.jpg" alt="Dog In Bed">
+    <section id="standard">
+        <img src="Images/dog-bed.jpg" alt="Dog In Bed">
         <h2>Standard Boarding</h2>
         <p>All the shared suites are climate-controlled inside and each pet is<br> provided with a comfortable donut bed on which to rest. The suites are <br>cleaned daily.</p>
         <ul>
             <li>
-                <a>Amenities: classical music, climate control</a>
+                <a>Amenities:<strong> classical music, climate control</strong></a>
             </li>
             <li>
                 <a>View: courtyard</a>
@@ -83,27 +92,27 @@
                 <a>Bed Type: donut bed</a>
             </li>
             <li>
-                <a>Categories: shared pet suite</a>
+                <a>Categories:<strong> shared pet suite</strong></a>
             </li>
 
         </ul>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/flop.png" alt="Floppy Ears">
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/blueeyes.png" alt="Blue Eyes">
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/beagle.jpg" alt="Beagle">
+        <img src="Images/flop.png" alt="Floppy Ears">
+        <img src="Images/blueeyes.png" alt="Blue Eyes">
+        <img src="Images/beagle.jpg" alt="Beagle">
         <h3>Prices start at: <a>$40 per night</a></h3>
-        <button>book</button>
-        <button>view details</button>
+        <button id="bookButton">book</button>
+        <button id="detailButton">view details</button>
 
 
     </section>
 
-    <section>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/reptilecage.jpg" alt="Puppy">
+    <section id="reptile">
+        <img src="Images/reptilecage.jpg" alt="Puppy">
         <h2>Reptile Boarding</h2>
         <p>Our facility has twenty vivariums to cover all your animals boarding <br> equirements. From chameleons through to tortoises, we can meet all  <br>your pets needs.</p>
         <ul>
             <li>
-                <a>Amenities: climate control, filtered water</a>
+                <a>Amenities:<strong> climate control, filtered water</strong></a>
             </li>
             <li>
                 <a>Size: 6m²</a>
@@ -112,23 +121,24 @@
                 <a>Bed Type: terrarium</a>
             </li>
             <li>
-                <a>Categories: vivarium</a>
+                <a>Categories:<strong> vivarium</strong></a>
             </li>
 
         </ul>
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/Green.jpg" alt="Green">
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/dragon.jpg" alt="Dragon">
-        <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/lizard.jpg" alt="Lizard">
+        <img src="Images/Green.jpg" alt="Green">
+        <img src="Images/dragon.jpg" alt="Dragon">
+        <img src="Images/lizard.jpg" alt="Lizard">
 
         <h3>Prices start at: <a>$60 per night</a></h3>
-        <button>book</button>
-        <button>view details</button>
+        <button id="bookButton">book</button>
+        <button id="detailButton">view details</button>
     </section>
-    <section>
         <footer>
-            <img src="file:///Users/jessicabyrne/Desktop/WDD(2)/Images/logo.png" alt="Logo">
             <nav>
                 <ul>
+                    <li>
+                        <img src="Images/logodark.png" alt="Logo">
+                    </li>
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -145,14 +155,12 @@
                         <a href="#">Contact Us</a>
                     </li>
                     <li>
-                        <a href="#">(777) 555-5101</a>
-                    </li>
-    
+                        <a href="#"><img src="Images/phonedark.png" alt="Phone">(777) 555-5101</a>
+                    </li>    
                 </ul>
             </nav>
     
         </footer>
-    </section>
 
 </body>
 </html>

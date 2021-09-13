@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+body, nav, section, footer, h1, h2, h3, p, a, ul, li, dt, dd
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: 100%;
+    text-decoration: none;
+    font: normal;
+    color: inherit;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: "Urbanist";
+}
+
+body
+{
+    font-size: 1.1rem;
+    color: #2F3033;
+    background-color: #FAFAF9;
+    text-align: center;
+}
+
+h1, h2, h3
+{
+    font-weight: bold;
+}
+
+nav
+{
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+h1
+{
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+h2
+{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#selected
+{
+    color: #ED715C;
+}
+
+footer
+{
+    background-color: #232225;
+    color: #FFFFFF;
+}
+
+section
+{
+    border: 3px solid #EFEFEF;
+    margin-bottom: 2rem;
+}
+
+button
+{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    font-size: large;
+    padding: 1.5rem 3rem;
+}
+
+nav li
+{
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+p
+{
+    margin-bottom: 1rem;
+}
+
+section ul
+{
+    margin-bottom: 1rem;
+}
+
+#bookButton
+{
+    background-color: #ED913A;
+    color: #FFFFFF;
+}
+
+#detailButton
+{
+    background-color: #FCEBC9;
+    color: #ED715C;
+}
+
+nav, body > section, footer
+{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+strong
+{
+    color: #ED715C;
+}
