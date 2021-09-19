@@ -7,11 +7,11 @@
 </head>
 <body>
     <header>
-        <nav>
+        <a href="#" id="logo"><img src="Images/logo.png" alt="Logo"></a>
+
+        <nav id="headerMenu">
+
             <ul>
-                <li>
-                    <a href="#"><img src="Images/logo.png" alt="Logo"></a>
-                </li>
                 <li>
                     <a id="selected" href="#">Boarding</a>
                 </li>
@@ -27,6 +27,7 @@
                 <li>
                     <a href="#">Blocks</a>
                 </li>
+                <div id="userMenu">
                 <li>
                     <a href="#"><img src="Images/account.png" alt="Account"></a>
                 </li>
@@ -39,15 +40,17 @@
                 <li>
                     <a href="#"><img src="Images/phone.png" alt="Phone">(777) 555-5101</a>
                 </li>
+                </div>
             </ul>
         </nav>
+        <h1><a>Boarding</a></h1>
 
     </header>
-    <h1><a>Boarding</a></h1>
     <section id="deluxe">
-        <img src="Images/puppy.jpg" alt="Puppy">
-        <h2>Deluxe Boarding</h2>
+        <img id="mainImg1" src="Images/puppy.jpg" alt="Puppy">
+        <a href="#"><h2> Deluxe Boarding</h2></a>
         <p>Our private pet suites afford plenty of room for your pets to relax and<br> enjoy their time away from home. All suites are furnished to reflect the <br>home environment.</p>
+        <div id="products">
         <ul>
             <li>
                 <a>Amenities:<strong> climate control, live cameras</strong></a>
@@ -64,20 +67,25 @@
             <li>
                 <a>Categories: <strong> pet suite</strong></a>
             </li>
-
         </ul>
-        <img src="Images/cutepuppy.jpg" alt="Cute Puppy">
-        <img src="Images/happypuppy.png" alt="Happy Puppy">
-        <img src="Images/dogbed.jpg" alt="Dog Bed">
+        </div>
+        <ul id="thumbnail">
+            <li><img src="Images/cutepuppy.jpg" alt="Cute Puppy"></li>
+            <li><img src="Images/happypuppy.png" alt="Happy Puppy"></li>
+            <li><img src="Images/dogbed.jpg" alt="Dog Bed"></li>
+        </ul>
+        
+        
 
-        <h3>Prices start at: <a>$60 per night</a></h3>
+        <h3>Prices start at: <a><strong>$60 per night</strong></a></h3>
         <button id="bookButton">book</button>
         <button id="detailButton">view details</button>
     </section>
     <section id="standard">
-        <img src="Images/dog-bed.jpg" alt="Dog In Bed">
-        <h2>Standard Boarding</h2>
+        <img id="mainImg2" src="Images/dog-bed.jpg" alt="Dog In Bed">
+        <a href="#"><h2>Standard Boarding</h2></a>
         <p>All the shared suites are climate-controlled inside and each pet is<br> provided with a comfortable donut bed on which to rest. The suites are <br>cleaned daily.</p>
+        <div id="products">
         <ul>
             <li>
                 <a>Amenities:<strong> classical music, climate control</strong></a>
@@ -96,20 +104,25 @@
             </li>
 
         </ul>
-        <img src="Images/flop.png" alt="Floppy Ears">
-        <img src="Images/blueeyes.png" alt="Blue Eyes">
-        <img src="Images/beagle.jpg" alt="Beagle">
-        <h3>Prices start at: <a>$40 per night</a></h3>
-        <button id="bookButton">book</button>
+        </div>
+        <ul id="thumbnail">
+            <li><img src="Images/flop.png" alt="Floppy Ears"></li>
+            <li><img src="Images/blueeyes.png" alt="Blue Eyes"></li>
+            <li><img src="Images/beagle.jpg" alt="Beagle"></li>
+        </ul>
+        
+        <h3>Prices start at: <a><strong>$40 per night</strong></a></h3>
+        <button id="bookButton"><a href="#"> book</a></button>
         <button id="detailButton">view details</button>
 
 
     </section>
 
     <section id="reptile">
-        <img src="Images/reptilecage.jpg" alt="Puppy">
-        <h2>Reptile Boarding</h2>
+        <img id="mainImg3" src="Images/reptilecage.jpg" alt="Puppy">
+        <a href="#"><h2>Reptile Boarding</h2></a>
         <p>Our facility has twenty vivariums to cover all your animals boarding <br> equirements. From chameleons through to tortoises, we can meet all  <br>your pets needs.</p>
+    <div id="products">
         <ul>
             <li>
                 <a>Amenities:<strong> climate control, filtered water</strong></a>
@@ -125,20 +138,26 @@
             </li>
 
         </ul>
-        <img src="Images/Green.jpg" alt="Green">
-        <img src="Images/dragon.jpg" alt="Dragon">
-        <img src="Images/lizard.jpg" alt="Lizard">
-
-        <h3>Prices start at: <a>$60 per night</a></h3>
+    </div>
+        <ul id="thumbnail">
+            <li><img src="Images/Green.jpg" alt="Green"></li>
+            <li><img src="Images/dragon.jpg" alt="Dragon"></li>
+            <li><img src="Images/lizard.jpg" alt="Lizard"></li>
+        </ul>
+        
+        
+        
+        <div id="final">
+        <h3>Prices start at: <a><strong>$60 per night</strong></a></h3>
         <button id="bookButton">book</button>
         <button id="detailButton">view details</button>
+        </div>
     </section>
         <footer>
+            <a href="#"><img src="Images/logodark.png" alt="Logo"></a>
+
             <nav>
                 <ul>
-                    <li>
-                        <img src="Images/logodark.png" alt="Logo">
-                    </li>
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -155,7 +174,7 @@
                         <a href="#">Contact Us</a>
                     </li>
                     <li>
-                        <a href="#"><img src="Images/phonedark.png" alt="Phone">(777) 555-5101</a>
+                        <a href="#" ><img id="footerPhone"src="Images/phonedark.png" alt="Phone">(777) 555-5101</a>
                     </li>    
                 </ul>
             </nav>

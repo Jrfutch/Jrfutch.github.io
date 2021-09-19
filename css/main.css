@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
-body, nav, section, footer, h1, h2, h3, p, a, ul, li, dt, dd
+body, nav, section, footer, h1, h2, h3, p, a, ul, li, dt, dd  /*CSS Reset*/
 {
     margin: 0;
     padding: 0;
@@ -8,106 +8,322 @@ body, nav, section, footer, h1, h2, h3, p, a, ul, li, dt, dd
     font: 100%;
     text-decoration: none;
     font: normal;
+    font-size: 62.5%;
     color: inherit;
     box-sizing: border-box;
     margin: auto;
-    font-family: "Urbanist";
+    font-family: "Urbanist", sans-serif;
 }
 
-body
+body   /*Body background color and font size*/
 {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
     color: #2F3033;
     background-color: #FAFAF9;
-    text-align: center;
 }
 
-h1, h2, h3
+body ul
+{
+    font-size: 3rem;
+}
+
+h1, h2, h3   /*Added bold to headings*/
 {
     font-weight: bold;
 }
 
-nav
+nav  /*Margin and bold for both navigations, top and bottom*/
 {
     font-weight: bold;
     margin-bottom: 5rem;
+    
 }
 
-h1
+h1   /*Heading 1 font size adjustment, margin at the bottom and centeral text alignment*/
 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 6rem;
+    text-align: center;
 }
 
-h2
+h2    /*All heading 2's have font size, margin bottom and top*/
 {
     font-size: 2rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
-#selected
+header
+{
+    overflow: auto;
+}
+
+#selected  /*Current "selected" option from the top navigation section*/
 {
     color: #ED715C;
 }
 
-footer
+footer   /*Footer colors*/
 {
     background-color: #232225;
     color: #FFFFFF;
+    overflow: auto;
 }
 
-section
+#thumbnail li     /*Displays thumbnail images as inline block*/
+{
+    display: inline-block;
+}
+
+section   /*All sections have a border and small margin at the bottom*/
 {
     border: 3px solid #EFEFEF;
     margin-bottom: 2rem;
+
 }
 
-button
+button   /*Buttons with padding and margins to shape it*/
 {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 5rem;
-    margin-left: 1rem;
     font-size: large;
     padding: 1.5rem 3rem;
 }
 
-nav li
+nav li   /*Adjusts navigation at top and bottom to display as inline block and padding for space*/
 {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
 }
 
-p
+nav li:hover   /*Each navigation item changes color when hovered over*/
+{
+    color: #ED715C;
+}
+
+p    /*Adds margin to paragraphs*/
+{
+    margin-bottom: 1rem;
+    float: left;
+}
+
+section ul    /*All lists have a bottom margin*/
 {
     margin-bottom: 1rem;
 }
 
-section ul
-{
-    margin-bottom: 1rem;
-}
-
-#bookButton
+#bookButton      /*Changes the Book button colors*/
 {
     background-color: #ED913A;
     color: #FFFFFF;
 }
 
-#detailButton
+h2:hover   /*All heading 2's change color when hovered over*/
+{
+    color: #ED715C;
+}
+
+#detailButton  /*Changes the Detail button colors*/
 {
     background-color: #FCEBC9;
     color: #ED715C;
 }
 
-nav, body > section, footer
+nav, body > section, footer  
 {
     max-width: 100rem;
     margin: 0 auto;
     padding: 1.5rem;
 }
 
-strong
+strong  /*All bold HTML elements change color when hovered over*/
 {
     color: #ED715C;
+}
+
+strong:hover   /**/
+{
+    text-decoration: underline;
+}
+
+#bookButton:hover   /*Book button changes color when hovered over*/
+{
+    color: black;
+    background-color: #FFFFFF;
+    outline: black;
+}
+
+#detailButton:hover  /*Detail button changes color when hovered over*/
+{
+    color: black;
+    background-color: #FFFFFF;
+    outline: black;
+
+}
+
+#deluxe   /*Adds padding to deluxe section in body*/
+{
+    padding-left: 150px;
+    padding-right: 150px;
+    overflow: auto;
+
+}
+
+#standard  /*Adds padding to standard section in body*/
+{
+    padding-left: 150px;
+    padding-right: 150px;
+    overflow: auto;
+}
+
+#reptile  /*Adds padding to reptile section in body*/
+{
+    padding-left: 150px;
+    padding-right: 150px;
+    overflow: auto;
+}
+
+#headerMenu  /*Header menu float*/
+{
+    float: left;
+    width: 1500px;
+}
+
+h1   /*Header 1 clear*/
+{
+    clear: both;
+}
+
+#logo    /*Logo image float*/
+{
+    float: left;
+    padding-left: 2rem;
+}
+
+#headerMenu::after   /*Header navigation menu clear*/
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#userMenu li /*Right side of header menu padding*/
+{
+    padding-right: 0.25rem;
+}
+
+#userMenu   /*Right side of header menu float*/
+{
+    float: right;
+}
+
+#deluxe #mainImg1  /*Float for first big image*/
+{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+#thumbnail   /*Clear for all thumbnail div's*/
+{
+    clear: both;
+}
+
+#deluxe h2  /*Padding for deluxe section heading 2*/
+{
+    padding-top: 10px;
+}
+
+#products li  /*Padding for all text lists in body*/
+{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+
+#thumbnail  /*Float for all thumbnails*/
+{
+    float: left;
+    margin-right: 30px;
+}
+
+#end h3  /*Clear for end div in main body sections*/
+{
+    clear: both;
+    padding-top: 50px;
+}
+
+#standard  /*Section clear*/
+{
+    clear: both;
+}
+
+#standard #mainImg2  /*Float for second main image*/
+{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+#standard h2  /*Padding for standard section heading*/
+{
+    padding-top: 30px;
+}
+
+#standard #products ul  /*Bottom padding for standard section text list*/
+{
+    padding-bottom: 15px;
+}
+
+#reptile  /*Secrtion clear*/
+{
+    clear: both;
+}
+
+#reptile #mainImg3   /*Float for thrid main image*/
+{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+#reptile h2  /*Reptile section heading padding*/
+{
+    padding-top: 50px;
+}
+
+#final  /**/
+{
+    margin-top: 150px;
+}
+
+h3 strong    /*Increased font size for all strong heading 3 elements*/
+{
+    font-size: 1.5rem;
+}
+
+footer  /*Footer clear*/
+{
+    clear: both;
+}
+
+#standard p  /*Padding for standard section paragraph*/
+{
+    padding-right: 2rem;
+}
+
+footer img   /*Footer image float*/
+{
+    float: left;
+    padding-bottom: 2rem;
+}
+
+footer nav  /*Footer navigation mune padding*/
+{
+    padding-top: 2.5rem;
+}
+
+#footerPhone   /*Footer phone element padding*/
+{
+    padding-left: 15rem;
 }
