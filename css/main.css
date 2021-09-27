@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
-body, nav, section, footer, h1, h2, h3, p, a, ul, li, dt, dd  /*CSS Reset*/
+/*CSS Reset*/
+body, nav, section, fieldset, footer, h1, h2, h3, p, a, ul, li, dt, dd, label, input  
 {
     margin: 0;
     padding: 0;
@@ -8,49 +9,37 @@ body, nav, section, footer, h1, h2, h3, p, a, ul, li, dt, dd  /*CSS Reset*/
     font: 100%;
     text-decoration: none;
     font: normal;
-    font-size: 62.5%;
     color: inherit;
     box-sizing: border-box;
     margin: auto;
-    font-family: "Urbanist", sans-serif;
 }
 
-body   /*Body background color and font size*/
+body   
 {
-    font-size: 2.5rem;
+    font: 62.5%;
     color: #2F3033;
-    background-color: #FAFAF9;
+    background: #FAFAF9;
 }
 
-body ul
+/*Added bold to headings*/
+h1, h2   
 {
-    font-size: 3rem;
+    font: bold;
 }
 
-h1, h2, h3   /*Added bold to headings*/
-{
-    font-weight: bold;
-}
-
-nav  /*Margin and bold for both navigations, top and bottom*/
+/*Margin and bold for both navigations, top and bottom*/
+nav  
 {
     font-weight: bold;
     margin-bottom: 5rem;
     
 }
 
-h1   /*Heading 1 font size adjustment, margin at the bottom and centeral text alignment*/
+h1   
 {
     font-size: 5rem;
     margin-bottom: 6rem;
     text-align: center;
-}
-
-h2    /*All heading 2's have font size, margin bottom and top*/
-{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
 }
 
 header
@@ -58,75 +47,55 @@ header
     overflow: auto;
 }
 
-#selected  /*Current "selected" option from the top navigation section*/
+#selected  
 {
     color: #ED715C;
 }
 
-footer   /*Footer colors*/
+footer   
 {
     background-color: #232225;
     color: #FFFFFF;
     overflow: auto;
 }
 
-#thumbnail li     /*Displays thumbnail images as inline block*/
-{
-    display: inline-block;
-}
-
-section   /*All sections have a border and small margin at the bottom*/
-{
-    border: 3px solid #EFEFEF;
-    margin-bottom: 2rem;
-
-}
-
-button   /*Buttons with padding and margins to shape it*/
+button   
 {
     margin-top: 4rem;
     margin-bottom: 5rem;
     font-size: large;
     padding: 1.5rem 3rem;
+    border-radius: 2.5rem;
+    outline: none;
+    background-color: #FCEBC9;
+    color: #ED715C;
 }
 
-nav li   /*Adjusts navigation at top and bottom to display as inline block and padding for space*/
+button:hover
+{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+/*Adjusts navigation at top and bottom to display as inline block and padding for space*/
+nav li   
 {
     display: inline-block;
     padding: 0rem 2rem;
 }
 
-nav li:hover   /*Each navigation item changes color when hovered over*/
+/*Each navigation item changes color when hovered over*/
+nav li:hover   
 {
     color: #ED715C;
 }
 
-p    /*Adds margin to paragraphs*/
+/*Adds margin to paragraphs*/
+p    
 {
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     float: left;
-}
-
-section ul    /*All lists have a bottom margin*/
-{
-    margin-bottom: 1rem;
-}
-
-#bookButton      /*Changes the Book button colors*/
-{
-    background-color: #ED913A;
-    color: #FFFFFF;
-}
-
-h2:hover   /*All heading 2's change color when hovered over*/
-{
-    color: #ED715C;
-}
-
-#detailButton  /*Changes the Detail button colors*/
-{
-    background-color: #FCEBC9;
-    color: #ED715C;
 }
 
 nav, body > section, footer  
@@ -136,194 +105,185 @@ nav, body > section, footer
     padding: 1.5rem;
 }
 
-strong  /*All bold HTML elements change color when hovered over*/
+html
 {
-    color: #ED715C;
+    font-family: "Urbanist", sans-serif;
 }
 
-strong:hover   /**/
-{
-    text-decoration: underline;
-}
-
-#bookButton:hover   /*Book button changes color when hovered over*/
-{
-    color: black;
-    background-color: #FFFFFF;
-    outline: black;
-}
-
-#detailButton:hover  /*Detail button changes color when hovered over*/
-{
-    color: black;
-    background-color: #FFFFFF;
-    outline: black;
-
-}
-
-#deluxe   /*Adds padding to deluxe section in body*/
-{
-    padding-left: 150px;
-    padding-right: 150px;
-    overflow: auto;
-
-}
-
-#standard  /*Adds padding to standard section in body*/
-{
-    padding-left: 150px;
-    padding-right: 150px;
-    overflow: auto;
-}
-
-#reptile  /*Adds padding to reptile section in body*/
-{
-    padding-left: 150px;
-    padding-right: 150px;
-    overflow: auto;
-}
-
-#headerMenu  /*Header menu float*/
+/*Header menu float*/
+#headerMenu  
 {
     float: left;
     width: 1500px;
 }
 
-h1   /*Header 1 clear*/
+/*Header 1 clear*/
+h1   
 {
     clear: both;
 }
 
-#logo    /*Logo image float*/
+/*Logo image float*/
+#logo    
 {
     float: left;
     padding-left: 2rem;
 }
 
-#headerMenu::after   /*Header navigation menu clear*/
+/*Header navigation menu clear*/
+#headerMenu::after   
 {
     content: "";
     display: block;
     clear: both;
 }
 
-#userMenu li /*Right side of header menu padding*/
+/*Right side of header menu padding*/
+#userMenu li 
 {
     padding-right: 0.25rem;
 }
 
-#userMenu   /*Right side of header menu float*/
+/*Right side of header menu float*/
+#userMenu   
 {
     float: right;
 }
 
-#deluxe #mainImg1  /*Float for first big image*/
+nav ul
 {
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    padding-top: 2rem;
 }
 
-#thumbnail   /*Clear for all thumbnail div's*/
-{
-    clear: both;
-}
-
-#deluxe h2  /*Padding for deluxe section heading 2*/
-{
-    padding-top: 10px;
-}
-
-#products li  /*Padding for all text lists in body*/
-{
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-}
-
-
-#thumbnail  /*Float for all thumbnails*/
-{
-    float: left;
-    margin-right: 30px;
-}
-
-#end h3  /*Clear for end div in main body sections*/
-{
-    clear: both;
-    padding-top: 50px;
-}
-
-#standard  /*Section clear*/
+/*Footer clear*/
+footer  
 {
     clear: both;
 }
 
-#standard #mainImg2  /*Float for second main image*/
-{
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 20px;
-}
-
-#standard h2  /*Padding for standard section heading*/
-{
-    padding-top: 30px;
-}
-
-#standard #products ul  /*Bottom padding for standard section text list*/
-{
-    padding-bottom: 15px;
-}
-
-#reptile  /*Secrtion clear*/
-{
-    clear: both;
-}
-
-#reptile #mainImg3   /*Float for thrid main image*/
-{
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 20px;
-}
-
-#reptile h2  /*Reptile section heading padding*/
-{
-    padding-top: 50px;
-}
-
-#final  /**/
-{
-    margin-top: 150px;
-}
-
-h3 strong    /*Increased font size for all strong heading 3 elements*/
-{
-    font-size: 1.5rem;
-}
-
-footer  /*Footer clear*/
-{
-    clear: both;
-}
-
-#standard p  /*Padding for standard section paragraph*/
-{
-    padding-right: 2rem;
-}
-
-footer img   /*Footer image float*/
+/*Footer image float*/
+footer img   
 {
     float: left;
     padding-bottom: 2rem;
 }
 
-footer nav  /*Footer navigation mune padding*/
+/*Footer navigation mune padding*/
+footer nav  
 {
     padding-top: 2.5rem;
 }
 
-#footerPhone   /*Footer phone element padding*/
+/*Footer phone element padding*/
+#footerPhone   
 {
-    padding-left: 15rem;
+    padding-left: 25rem;
 }
+
+#contactInfo li
+{
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+#contactInfo ul
+{
+    padding-bottom: 2rem;
+    float: left;
+}
+
+#link
+{
+    font-weight: normal;
+    font: #7E7E7E;
+}
+
+#link:hover
+{
+    text-decoration: underline;
+}
+
+iframe
+{
+    width: 96rem;
+    border-radius: 2rem;
+}
+
+h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 1rem 0;
+    background: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.75);
+    outline: none;
+    border-radius: 2rem;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+section img
+{
+    float: right;
+    padding-bottom: 5rem;
+    border-radius: 3rem;
+}
+
+fieldset
+{
+    border: 0;
+    padding-bottom: 1rem;
+}
+
+label strong
+{
+    color: #AAAAAA;
+    font-weight: normal;
+}
+
+div label
+{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+input
+{
+    background-color: #F5F5F5;
+}
+
+textarea
+{
+    background-color: #F5F5F5;
+}
+
+#locationIcon
+{
+    width: 6rem;
+    height: 5rem;
+    float: left;
+}
+
+#phoneIcon
+{
+    width: 5rem;
+    height: 5rem;
+    float: left;
+}
+
+#emailIcon
+{
+    width: 5rem;
+    height: 5rem;
+    float: left;
+}
+

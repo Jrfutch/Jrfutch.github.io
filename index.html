@@ -13,7 +13,7 @@
 
             <ul>
                 <li>
-                    <a id="selected" href="#">Boarding</a>
+                    <a href="#">Boarding</a>
                 </li>
                 <li>
                     <a href="#">News</a>
@@ -22,14 +22,14 @@
                     <a href="#">Shop</a>
                 </li>
                 <li>
-                    <a href="#">Pages</a>
+                    <a id="selected" href="#">Pages</a>
                 </li>
                 <li>
                     <a href="#">Blocks</a>
                 </li>
                 <div id="userMenu">
                 <li>
-                    <a href="#"><img src="Images/account.png" alt="Account"></a>
+                    <a href="#" id="accountImg"><img src="Images/account.png" alt="Account"></a>
                 </li>
                 <li>
                     <a href="#"><img src="Images/cart.png" alt="Cart"></a>
@@ -43,143 +43,89 @@
                 </div>
             </ul>
         </nav>
-        <h1><a>Boarding</a></h1>
+        <h1><a>Contact Us</a></h1>
 
     </header>
-    <section id="deluxe">
-        <img id="mainImg1" src="Images/puppy.jpg" alt="Puppy">
-        <a href="#"><h2> Deluxe Boarding</h2></a>
-        <p>Our private pet suites afford plenty of room for your pets to relax and<br> enjoy their time away from home. All suites are furnished to reflect the <br>home environment.</p>
-        <div id="products">
+
+<section id="contactInfo">
+    <ul>
+        <li>
+            <img id="locationIcon" src="Images/location.png" alt="Location">
+        </li>
+        <li>
+            <p><strong>Address:</strong><br> 2516 Hilltop, New Berlin, <br> Wisconsin 2595 Pet Avenue, NY City</p>
+        </li>
+        <li>
+            <img id="phoneIcon" src="Images/phoneicon.png" alt="Location">
+        </li>
+        <li>
+            <p><strong>Phones:</strong><br> <strong id="link"> 123-456-7891</strong> (from 8am. to 6pm.) <br> <strong id="link">123-845-7896 </strong>(available 24/7)</p>
+        </li>
+        <li>
+            <img id="emailIcon" src="Images/email.png" alt="Location">
+        </li>
+        <li>
+            <p><strong>Emails:</strong><br> <strong id="link">pet-hello@pethotel.com </strong><br> <strong id="link">info@pethotel.com</strong></p>
+        </li>
+    </ul>
+</section>
+<section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1072129721792!2d-81.30353478456279!3d28.596560292458136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76f9a528a8eb3%3A0xbe0c9eae10031c4!2sFull%20Sail%20University!5e0!3m2!1sen!2sus!4v1632633612966!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section>
+    <img src="Images/happydog.jpg" alt="Happy Dog">
+
+    <h2>Have a Question?</h2>
+    <fieldset id="userName">
+        <div>
+            <label for="email">Name <strong>(required)</strong></label><br>
+            <input type="text" name="name" id="name" required="required">
+        </div>
+    </fieldset>
+    <fieldset id="emailAddress">
+        <div>
+            <label for="name">Email <strong>(required)</strong></label><br>
+            <input type="email" name="email" id="email" required="required">
+        </div>
+    </fieldset>
+    <fieldset id="userMessage">
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" rows="6"></textarea>
+        </div>
+    </fieldset>
+    <button><a href="#">sumbit</a></button>
+
+
+</section>
+
+    <footer>
+    <a href="#"><img src="Images/logodark.png" alt="Logo"></a>
+
+    <nav>
         <ul>
             <li>
-                <a>Amenities:<strong> climate control, live cameras</strong></a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a>View: courtyard</a>
+                <a href="#">About Us</a>
             </li>
             <li>
-                <a>Size: 16m²</a>
+                <a href="#">Services</a>
             </li>
             <li>
-                <a>Bed Type: bed with mattress and pillows</a>
+                <a href="#">Privacy Policy</a>
             </li>
             <li>
-                <a>Categories: <strong> pet suite</strong></a>
+                <a id="selected" href="#">Contact Us</a>
             </li>
+            <li>
+                <a href="#" ><img id="footerPhone"src="Images/phonedark.png" alt="Phone">(777) 555-5101</a>
+            </li>    
         </ul>
-        </div>
-        <ul id="thumbnail">
-            <li><img src="Images/cutepuppy.jpg" alt="Cute Puppy"></li>
-            <li><img src="Images/happypuppy.png" alt="Happy Puppy"></li>
-            <li><img src="Images/dogbed.jpg" alt="Dog Bed"></li>
-        </ul>
-        
-        
+    </nav>
 
-        <h3>Prices start at: <a><strong>$60 per night</strong></a></h3>
-        <button id="bookButton">book</button>
-        <button id="detailButton">view details</button>
-    </section>
-    <section id="standard">
-        <img id="mainImg2" src="Images/dog-bed.jpg" alt="Dog In Bed">
-        <a href="#"><h2>Standard Boarding</h2></a>
-        <p>All the shared suites are climate-controlled inside and each pet is<br> provided with a comfortable donut bed on which to rest. The suites are <br>cleaned daily.</p>
-        <div id="products">
-        <ul>
-            <li>
-                <a>Amenities:<strong> classical music, climate control</strong></a>
-            </li>
-            <li>
-                <a>View: courtyard</a>
-            </li>
-            <li>
-                <a>Size: 16m²</a>
-            </li>
-            <li>
-                <a>Bed Type: donut bed</a>
-            </li>
-            <li>
-                <a>Categories:<strong> shared pet suite</strong></a>
-            </li>
-
-        </ul>
-        </div>
-        <ul id="thumbnail">
-            <li><img src="Images/flop.png" alt="Floppy Ears"></li>
-            <li><img src="Images/blueeyes.png" alt="Blue Eyes"></li>
-            <li><img src="Images/beagle.jpg" alt="Beagle"></li>
-        </ul>
-        
-        <h3>Prices start at: <a><strong>$40 per night</strong></a></h3>
-        <button id="bookButton"><a href="#"> book</a></button>
-        <button id="detailButton">view details</button>
-
-
-    </section>
-
-    <section id="reptile">
-        <img id="mainImg3" src="Images/reptilecage.jpg" alt="Puppy">
-        <a href="#"><h2>Reptile Boarding</h2></a>
-        <p>Our facility has twenty vivariums to cover all your animals boarding <br> equirements. From chameleons through to tortoises, we can meet all  <br>your pets needs.</p>
-    <div id="products">
-        <ul>
-            <li>
-                <a>Amenities:<strong> climate control, filtered water</strong></a>
-            </li>
-            <li>
-                <a>Size: 6m²</a>
-            </li>
-            <li>
-                <a>Bed Type: terrarium</a>
-            </li>
-            <li>
-                <a>Categories:<strong> vivarium</strong></a>
-            </li>
-
-        </ul>
-    </div>
-        <ul id="thumbnail">
-            <li><img src="Images/Green.jpg" alt="Green"></li>
-            <li><img src="Images/dragon.jpg" alt="Dragon"></li>
-            <li><img src="Images/lizard.jpg" alt="Lizard"></li>
-        </ul>
-        
-        
-        
-        <div id="final">
-        <h3>Prices start at: <a><strong>$60 per night</strong></a></h3>
-        <button id="bookButton">book</button>
-        <button id="detailButton">view details</button>
-        </div>
-    </section>
-        <footer>
-            <a href="#"><img src="Images/logodark.png" alt="Logo"></a>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#" ><img id="footerPhone"src="Images/phonedark.png" alt="Phone">(777) 555-5101</a>
-                    </li>    
-                </ul>
-            </nav>
-    
-        </footer>
+    </footer>
 
 </body>
 </html>
